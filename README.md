@@ -8,3 +8,14 @@
 
 **Архив с названием project.tar является ключевым. Распаковывать его нужно с помощью команды `tar -xf project.tar`**
 
+## Быстрое развертывание
+Быстро развернуть данный шаблон можно с помощью команды:
+
+```bash
+# Прямо в директории с новым проектом
+curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar && tar -xf project.tar
+# Создавая новую директорию
+echo Введите название новой директории
+read inp
+mkdir $inp && cd $inp && curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar && tar -xf project.tar
+```
