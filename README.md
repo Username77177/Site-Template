@@ -13,9 +13,10 @@
 
 ```bash
 # Прямо в директории с новым проектом
-curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar && tar -xf project.tar
+curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar --output project.tar && tar -xf project.tar && rm project.tar
+
 # Создавая новую директорию
 echo Введите название новой директории
 read inp
-mkdir $inp && cd $inp && curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar && tar -xf project.tar
+mkdir $inp && cd $inp && curl https://raw.githubusercontent.com/Username77177/Site-Template/master/project.tar --output project.tar && tar -xf project.tar && rm project.tar
 ```
